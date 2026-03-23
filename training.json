@@ -1,0 +1,50 @@
+{
+  "title": "Dynamic Flag Demo",
+  "description": "Adaptive training test for dynamic flag lab",
+  "state": "UNRELEASED",
+  "estimated_duration": 10,
+  "prerequisites": [],
+  "outcomes": [
+    "Read the current rotating flag from the lab VM",
+    "Submit the current flag"
+  ],
+  "phases": [
+    {
+      "phase_type": "INFO",
+      "title": "Welcome",
+      "order": 0,
+      "content": "Connect to the lab VM and find the current flag."
+    },
+    {
+      "phase_type": "TRAINING",
+      "title": "Dynamic Flag Phase",
+      "order": 1,
+      "estimated_duration": 10,
+      "allowed_commands": 20,
+      "allowed_wrong_answers": 10,
+      "mitre_techniques": [],
+      "decision_matrix": [
+        {
+          "order": 0,
+          "wrong_answers": 0.0,
+          "solution_displayed": 0.0,
+          "questionnaire_answered": 0.0,
+          "completed_in_time": 1.0,
+          "keyword_used": 0.0
+        }
+      ],
+      "tasks": [
+        {
+          "title": "Find the rotating flag",
+          "order": 0,
+          "content": "Read the current flag from /home/user/lab/key.txt and submit it.",
+          "answer": "TEMP_STATIC_FLAG",
+          "solution": "Current expected flag is ${ANSWER}",
+          "incorrect_answer_limit": 10,
+          "modify_sandbox": false,
+          "sandbox_change_expected_duration": 0
+        }
+      ]
+    }
+  ]
+}
